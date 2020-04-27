@@ -12,7 +12,7 @@ class Volunteer extends Model {
   }
 
   static get tableName() {
-    return 'sites';
+    return 'summerservice';
   }
 
   static get jsonSchema() {
