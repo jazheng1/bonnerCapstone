@@ -1,6 +1,6 @@
 let { Model, snakeCaseMappers } = require('objection');
 
-class Volunteer extends Model {
+class Summer extends Model {
   static get columnNameMappers() {
     /*
       In JavaScript we want camel case (e.g., createdAt), but
@@ -32,4 +32,4 @@ class Volunteer extends Model {
   }
 }
 
-module.exports = Volunteer;
+module.exports = Summer;

@@ -1,0 +1,36 @@
+.divider {
+  border-bottom: black solid 2px;
+  width: 90%;
+  position: relative;
+  top: 3em;
+  left: 5%;
+}
+
+.searchbar {
+  position: relative;
+  top: 2em;
+}
+
+.learnmore {
+  text-decoration: none;
+  color: black;
+}
+
+.learnmore:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.sitecard {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+.sitecard:hover {
+  border: black solid 1px;
+}
+
+ul {
+  list-style: none;
+}

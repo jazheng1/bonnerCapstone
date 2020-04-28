@@ -3,11 +3,13 @@ exports.up = function(knex) {
     table.increments('id').primary();
     table.text('name').notNullable();
     table.text('category').notNullable();
-    table.text('info').notNullable();
-    table.text('job').notNullable();
+    table.text('mission').notNullable();
+    table.text('email').notNullable();
+    table.text('number');
+    table.text('url');
   });
 };
 
 exports.down = function(knex) {
-  return knex.schema.droptable('sites');
+  return knex.schema.dropTable('sites');
 };
