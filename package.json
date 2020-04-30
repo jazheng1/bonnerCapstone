@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pg:psql": "psql bonner_development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "DEBUG=\"${DEBUG:=bonnerCapstone:*}\" node ./bin/server"
   },
@@ -23,12 +24,15 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
     "express-promise-router": "^3.0.3",
+    "fs": "0.0.1-security",
     "knex": "^0.21.0",
     "morgan": "^1.10.0",
     "objection": "^2.1.3",
+    "papaparse": "^5.2.0",
     "pg": "^8.0.3"
   },
   "devDependencies": {
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "nodemon": "^2.0.3"
   }
 }

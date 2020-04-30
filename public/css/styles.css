@@ -11,26 +11,72 @@
   top: 2em;
 }
 
-.learnmore {
-  text-decoration: none;
-  color: black;
-}
-
-.learnmore:hover {
-  text-decoration: none;
-  color: black;
+.search-input:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .sitecard {
   width: 80%;
   position: relative;
   left: 10%;
+  padding: 1em;
 }
 
-.sitecard:hover {
-  border: black solid 1px;
-}
-
-ul {
+.options {
   list-style: none;
+}
+
+.about {
+  position: relative;
+  width: 90%;
+  left: 2%;
+}
+
+.about-info {
+  width: 90%;
+  position: relative;
+  left: 3.7%;
+}
+
+.kristin, .kanalyn{
+  width: 80%;
+  position: relative;
+  left: 2%;
+}
+
+.kristin-info, .kanalyn-info{
+  line-height: 20px;
+  position: relative;
+  top: 1em;
+}
+
+.blurb {
+  background-color: rgba(0, 0, 0, .3);
+  position: relative;
+  top: 150px;
+  left: 370px;
+  width: 40%;
+  height: 170px;
+  border-radius: 25px;
+}
+
+.image {
+  background-image: url('https://charlotteagenda-charlotteagenda.netdna-ssl.com/wp-content/uploads/2018/02/davidson-college-e1519409901854.jpg');
+  object-fit: cover;
+  height: 507px;
+}
+
+.blurb-text {
+  position: relative;
+  color: white;
+  top: 2em;
+}
+
+
+h6 {
+  display: inline-block;
+}
+
+.summerimg {
+  padding-bottom: 1em;
 }

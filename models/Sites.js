@@ -12,7 +12,7 @@ class Locations extends Model {
   }
 
   static get tableName() {
-    return 'sites';
+    return 'organizations';
   }
 
   static get jsonSchema() {
@@ -24,10 +24,11 @@ class Locations extends Model {
       properties: {
         id: { type: 'integer' },
         name: {type: 'string', minLength: 1},
-        number: {type: 'string'},
+        phonenumber: {type: 'string'},
         email: {type: 'string', minLength: 1},
         category: {type: 'string', minLength: 1},
-        mission: { type: 'string', minLength: 1 }
+        mission: { type: 'string', minLength: 1 },
+        url: {type: 'string', minLength: 1}
       }
     };
   }

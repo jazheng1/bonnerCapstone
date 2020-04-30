@@ -1,3 +1,50 @@
+<a href="top"></a>
+<img src="https://www.davidson.edu/sites/default/files/styles/extra_extra_large_24_7/public/2019-03/DSC_7118.JPG.jpg?itok=xNezNoue" height="auto" width="100%" class="summerimg">
+<div class="about">
+  <h2>Summer of Service</h2>
+  <div class="about-info">
+    <h4>Requirements</h4>
+    <ul>
+      <li>Bonner Scholars are required to complete two summers of service during their time at Davidson.</li>
+      <li>Within these service opportunities, students are to complete 280 hours each summer over the course of at least 7 weeks.</li>
+      <li>The service activity should take place at a non-profit organization, but in rare occasions, this is not always the case.</li>
+      <li>Students are allowed to be compensated for their work, and the Bonner program provides funding for students who may need any assistance with housing, food, transportation, and so on.</li>
+      <li>Currently, due to COVID-19, students who are receiving payment for their work are required to complete the full 280 hours of service, while unpaid students are required to complete 166 hours.  As a whole, these summers are geared for individuals to gain valuable work experience in their field of interest as well as create a positive impact in the community.</li>
+    </ul>
+  </div>
+</div>
 
+<div class="mx-auto searchbar" style="width: 360px">
+  <form class="form-inline col-auto" action="/summersearch" method="GET">
+    <input class="form-control mr-sm-2" type="search" name="term" placeholder="Search" {{#if searchTerm}}value="{{searchTerm}}"{{/if}}>
+    <button class="btn btn-danger" type="submit">Search</button>
+  </form>
+</div>
 
-<h2>hello you are in summer of service</h2>
+<div class="divider"></div>
+
+<br><br><br>
+
+{{#each summer}}
+<form action="/more" method="GET">
+  <ul class="options">
+    <li>
+        <div class="row no-gutters sitecard">
+          <div class="col-md-3">
+            <h4 class="location-name">{{name}}</h4>
+            <span class="badge badge-danger">{{category}}</span>
+          </div>
+          <div class="col-md-9 learnmore-info">
+            <p>{{mission}}</p>
+            {{#if phonenumber}}
+              <p><h6>Number:</h6> {{phonenumber}}</p>
+            {{/if}}
+            <p><h6>Email:</h6> <a href="mailto:{{email}}?subject=The%20subject%20of%20the%20mail&subject=Volnteer%20Opportunity">{{email}}</a></p>
+            <button class="btn btn-danger" type="submit" name="{{name}}">Search</button>
+            </div>
+          </div>
+        </div>
+    </li>
+  </ul>
+</form>
+{{/each}}

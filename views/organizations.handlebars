@@ -1,7 +1,7 @@
 <a href="top"></a>
 <div class="mx-auto searchbar" style="width: 360px">
   <form class="form-inline col-auto" action="/search" method="GET">
-    <input class="form-control mr-sm-2" type="search" name="term" placeholder="Search" {{#if searchTerm}}value="{{searchTerm}}"{{/if}}>
+    <input class="form-control mr-sm-2 search-input" type="search" name="term" placeholder="Search" {{#if searchTerm}}value="{{searchTerm}}"{{/if}}>
     <button class="btn btn-danger" type="submit">Search</button>
   </form>
 </div>
@@ -11,22 +11,25 @@
 <br><br><br>
 
 {{#each location}}
-<ul>
-  <li>
-    <a class="learnmore" href="">
-      <div class="row no-gutters sitecard">
-        <div class="col-md-2">
-          <h4 class="location-name">{{name}}</h4>
-        </div>
-        <div class="col-md-10">
-          <p>{{category}}</p>
-          <p>{{mission}}</p>
-          <p>{{number}}</p>
-          <p>{{email}}</p>
+<form action="/more" method="GET" name="{{name}}">
+  <ul class="options">
+    <li>
+        <div class="row no-gutters sitecard">
+          <div class="col-md-3">
+            <h4 class="location-name">{{name}}</h4>
+            <span class="badge badge-danger">{{category}}</span>
+          </div>
+          <div class="col-md-9 learnmore-info">
+            <p>{{mission}}</p>
+            {{#if phonenumber}}
+              <p><h6>Number:</h6> {{phonenumber}}</p>
+            {{/if}}
+            <p><h6>Email:</h6> <a href="mailto:{{email}}?subject=The%20subject%20of%20the%20mail&subject=Volnteer%20Opportunity">{{email}}</a></p>
+            <button class="btn btn-danger" type="submit">Learn More</button>
+            </div>
           </div>
         </div>
-      </div>
-    </a>
-  </li>
-</ul>
+    </li>
+  </ul>
+</form>
 {{/each}}

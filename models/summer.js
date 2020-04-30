@@ -19,14 +19,15 @@ class Summer extends Model {
     return {
       type: 'object',
       required: [
-        'name', 'category', 'info', 'job'
+        'name', 'category', 'mission'
       ],
       properties: {
         id: { type: 'integer' },
         name: {type: 'string', minLength: 1},
+        number: {type: 'string'},
+        email: {type: 'string', minLength: 1},
         category: {type: 'string', minLength: 1},
-        info: { type: 'string', minLength: 1 },
-        job: {type: 'string', minLength: 1}
+        mission: { type: 'string', minLength: 1 }
       }
     };
   }
