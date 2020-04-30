@@ -1,1 +1,1 @@
-web: DEBUG="${DEBUG:=bonnerCapstone:*}" node ./bin/server
+web: npm start
