@@ -75,7 +75,8 @@ h6 {
   padding-bottom: 1em;
 }
 
-.description {
-  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans";
+.opportunity .description {
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif";
   font-weight: 400;
+  white-space: pre-wrap;
 }
