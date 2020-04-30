@@ -24,7 +24,7 @@ class Opportunities extends Model {
   }
 
   static get relationMappings() {
-    let Organization = require('./Sites');
+    let Organization = require('./sites');
 
     return {
       organization: {
